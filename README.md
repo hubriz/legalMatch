@@ -1,5 +1,7 @@
 ASSESSMENT EXAM for LegalMatch Front-end Developer Position
-ART DE GUZMAN
+
+ART DE GUZMAN 10092020
+http://hubriz.github.io/resume
 
 *******************************************
 

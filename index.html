@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>LegalMatch</title>
 
+	<link rel="stylesheet" href="css/easy-autocomplete.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,8 +16,297 @@
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
 		</div>	
 	<![endif]-->	
+	
 
-	<!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+	<div class="site-wrapper">
+
+		<!-- HEADER BAR -->
+		<div class="header-bar">
+			<div class="header-bar-inner">
+				<div class="left-content">
+					<a href="index.html" id="site-logo">
+						<img src="images/logo.png" alt="LegalMatch">
+						<span>Find the right lawyer now</span>
+					</a>
+				</div>
+				<div class="right-content">
+					<ul>
+						<li>No fee to present your case</li>
+						<li>Choose from lawyers in your area</li>
+						<li>A 100&#37; confidential service</li>
+					</ul>
+				</div>		
+			</div>
+		</div>
+
+		<!-- FEATURE SECTION -->
+		<div class="feature-section">
+			<div class="feature-section-inner">
+				<div class="feature-title">
+					<h1>Find a Lawyer for your Legal Issue</h1>
+					<p>Fast, Free and Confidential</p>
+				</div>
+				<div class="feature-content">
+					<div class="left-content">
+						<div class="form-group">							
+							<label for="field-city">Enter Zip Code or City: </label>
+							<input type="text" id="field-city" class="form-field" placeholder="Does not have to be where you live" />
+						</div>
+						<div class="form-group">
+							<label for="field-category">Choose a category: </label>
+							<!-- <input type="text" id="field-category" class="form-field" placeholder="Click to choose a legal category" /> -->
+							<select id="field-category">
+							    <option value="hide">Click to choose a legal category</option>
+							    <option value="category-1">Family</option>
+							    <option value="category-2">Criminal Defense</option>
+							    <option value="category-3">Business</option>
+							    <option value="category-4">Personal Injury</option>
+							    <option value="category-5">Bankruptcy &amp; Finances</option>
+							    <option value="category-6">Products &amp; Services</option>
+							    <option value="category-7">Employment</option>
+							    <option value="category-8">Real Estate</option>
+							    <option value="category-9">Immigration</option>
+							    <option value="category-10">Wills, Trusts &amp; Estates</option>
+							    <option value="category-11">Government</option>
+							    <option value="category-12">Intelectual Property</option>
+							</select>							
+						</div>
+						<p>Can&rsquo;t find your category&#63; <a href="#" id="triggerOtherCategories">Click me</a></p> 
+					</div>
+					<div class="right-content">
+						<h3>Clients review LegalMatch lawyers</h3>
+						<ul>
+							<li>
+								<figure>
+									<img src="images/pic-mitchell.png" alt="M. Mitchell">
+									<figcaption>
+										<strong>Mitchell M.</strong>
+										<span>Cherry Hill, NJ</span>
+									</figcaption>
+								</figure>
+								<div class="testimonial-details">
+									<p>Family Law </p><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#10025;</i></div>
+									<blockquote>
+										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ea nobis iure molestiae dignissimos iste....</p>
+									</blockquote>
+									<p class="read-more"><a href="#">Read more</a></p>
+								</div>
+							</li>
+							<li>
+								<figure>
+									<img src="images/pic-joel.png" alt="Joel C.">
+									<figcaption>
+										<strong>Joel C.</strong>
+										<span>Little Rock, AK</span>
+									</figcaption>
+								</figure>
+								<div class="testimonial-details">
+									<p>Job &amp; Employement Law</p><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#10025;</i></div>
+									<blockquote>
+										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed maiores magni itaque delectus rerum non....</p>
+									</blockquote>
+									<p class="read-more"><a href="#">Read more</a></p>
+								</div>
+							</li>
+							<li>
+								<figure>
+									<img src="images/pic-brigida.png" alt="Brigida R.">
+									<figcaption>
+										<strong>Brigida R.</strong>
+										<span>Dallas, TX</span>
+									</figcaption>
+								</figure>
+								<div class="testimonial-details">
+									<p>Family Law </p><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#10025;</i></div>
+									<blockquote>
+										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, dolore, ea! Saepe magnam provident, voluptatem...</p>
+									</blockquote>
+									<p class="read-more"><a href="#" id="client-review-brigida">Read more</a></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>		
+		
+	</div>
+
+	<footer>
+		<div class="footer-inner">
+			<div class="left-content">
+				<a href="#"><img src="images/logo-footer.png" alt="Legal Match"></a>
+			</div>
+			<div class="middle-content">
+				<nav>
+					<ul>
+						<li><a href="#">User agreement</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Site map</a></li>
+					</ul>
+				</nav>
+				<p>Copyright 1999-2016 LegalMatch. All rights reserved. LegalMatch&trade;.</p>
+				<p>the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patents Pending.</p>
+			</div>
+			<div class="right-content">
+			<ul>
+				<li><a href="#"><img src="images/icon-trust.png" alt="Trust"></a></li>
+				<li><a href="#"><img src="images/icon-bbb.png" alt="BBB"></a></li>
+			</ul>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- MODAL CONTENT -->
+
+	<!-- MODAL - Other Categories -->
+	<div class="modal-container other-categories">
+		<input id="modal-toggle" type="checkbox">
+		<label class="modal-btn" for="modal-toggle">Click me</label> 
+		<label class="modal-backdrop" for="modal-toggle"></label>
+		<div class="modal-content">
+			<label class="modal-close" for="modal-toggle">&#x2715;</label>
+			<h2>Other Categories</h2>
+			<p>Choose the category that best fits your case.</p>
+
+			<ul class="category-list">
+			 	<li><a href="#" onclick="getTextContent(this)">Abuse (Child, Domestic, Sexual</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Agencies &amp; Administration</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Automobile (DUI, Crimes, Speeding)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Automobiles (Accidents, Insurance)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Banking (Business, Consumer)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Bars &amp; Restaurants</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Business Formation Dissolution</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Children (Adoption, Custody, Support)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Class Actions (Bad Drugs, Products)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Commercial Law and Contacts</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Commercial Real Estate</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Constitutional Law</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Construction (Disputes, Liens)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Categories Item Here</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Loremipsum Dolorsitamet</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Lonsectetur Scingelit  (Baseererkj, Mereit)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Miam Euvelit</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Mempor Auctor (Estiarma, Toeruslej)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Nisultricies Dictumest.</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Ntfring Sodalelit (Aeeticl Restoustoust)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Ntvarius Lectus & Congue </a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Pellentesque</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Rigula Aliquamattis (Nestusotu, Wewreist)</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Set Tigulempor</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Sehicula Sedsitamet</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Seque Nesturre </a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Tollis Gaurissed</a></li>
+			 	<li><a href="#" onclick="getTextContent(this)">Tempor Auctor (Estiarma, Toeruslej)</a></li>
+			 </ul> 
+			<!-- <label class="modal-content-btn" for="modal-toggle">OK</label>    -->
+		</div> 
+	</div>
+
+
+	<!-- MODAL - Client Reviews -->
+	<div class="modal-container client-reviews">
+		<input id="modal-toggle-review" type="checkbox">
+		<label class="modal-btn" for="modal-toggle-review">Click me</label> 
+		<label class="modal-backdrop" for="modal-toggle-review"></label>
+		<div class="modal-content">
+			<label class="modal-close review-close" for="modal-toggle-review">&#x2715;</label>
+			<h2>Client Reviews</h2> 
+
+			
+			<figure>
+				<img src="images/pic-brigida.png" alt="Brigida">
+				<figcaption>
+					<h4>Brigida R.</h4>
+					<p>Dallas, TX</p>
+					<span>Family Law</span>
+				</figcaption>
+			</figure>
+
+			<div class="modal-section-title">
+				<h3>Ratings (29 users)</h3> 
+				<div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i class="star-gray">&#9733;</i></div>
+			</div>
+
+			<ul>
+				<li>
+					<div class="left-content"><strong>Overall</strong></div>
+					<div class="right-content"><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i></div></div>
+				</li>
+				<li>
+					<div class="left-content">Responded in a timely manner</div>
+					<div class="right-content"><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i class="star-gray">&#9733;</i></div></div>
+				</li>
+				<li>
+					<div class="left-content">Answered questions clearly</div>
+					<div class="right-content"><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i></div></div>
+				</li>
+				<li>
+					<div class="left-content">Understood needs</div>
+					<div class="right-content"><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i class="star-gray">&#9733;</i></div></div>
+				</li>
+				<li>
+					<div class="left-content">Gave complete and clear information</div>
+					<div class="right-content"><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i></div></div>
+				</li>
+				<li>
+					<div class="left-content">Knowledgeable in legal area</div>
+					<div class="right-content"><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i class="star-gray">&#9733;</i></div></div>
+				</li>
+				<li>
+					<div class="left-content">Good value for money</div>
+					<div class="right-content"><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i></div></div>
+				</li>
+				<li>
+					<div class="left-content">Would hire again</div>
+					<div class="right-content"><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i class="star-gray">&#9733;</i></div></div>
+				</li>
+				<li>
+					<div class="left-content">Would recommend to a friend</div>
+					<div class="right-content"><div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i></div></div>
+				</li>
+			</ul>
+
+			<div class="review-details">
+				<div class="star-rating"><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#10025;</i></div> 
+				<strong>by Dexter Marchal, 06/10/2016</strong>
+				<p>Deb did a great job. Got my bench warrant set aside... was sure I was going to jail... phew. Judge seemed to respect her and I got what I</p>
+			</div>
+
+			
+			<label for="modal-toggle-review">Close</label>
+		</div> 
+	</div>	
+
+	<!-- MODAL - To STEP 3 -->
+	<div class="modal-container modal-step-3">
+		<input id="modal-toggle-step-3" type="checkbox">
+		<label class="modal-btn" for="modal-toggle-step-3">Click me</label> 
+		<label class="modal-backdrop" for="modal-toggle-step-3"></label>
+		<div class="modal-content">
+			<label class="modal-close review-close" for="modal-toggle-step-3">&#x2715;</label>
+			
+			<h2>Which <strong>Family Law</strong> issue(s) apply to your case&#63;</h2>
+
+			<ul>
+				<li><label for="check-adoptions"><input type="checkbox" id="check-adoptions" name="check-adoptions" /> Adoptions</label></li>
+				<li><label for="check-guardianship"><input type="checkbox" id="check-guardianship" name="check-guardianship" /> Guardianship</label></li>
+				<li><label for="check-child-custody"><input type="checkbox" id="check-child-custody" name="check-child-custody" /> Child Custody and Visitation</label></li>
+				<li><label for="check-paternity"><input type="checkbox" id="check-paternity" name="check-paternity" /> Paternity</label></li>
+				<li><label for="check-child-support"><input type="checkbox" id="check-child-support" name="check-child-support" /> Child Support</label></li>
+				<li><label for="check-separations"><input type="checkbox" id="check-separations" name="check-separations" /> Separations</label></li>
+				<li><label for="check-divorce"><input type="checkbox" id="check-divorce" name="check-divorce" /> Divorce</label></li>
+				<li><label for="check-alimony"><input type="checkbox" id="check-alimony" name="check-alimony" /> Spouse Support or Alimony</label></li>
+			</ul>
+
+			<label for="modal-toggle-step-3" class="btn-blue">Find a Lawyer now</label>
+		</div> 
+	</div>				
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="js/jquery.easy-autocomplete.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
