@@ -17,11 +17,15 @@ clickMe.addEventListener('click', function(e){
 
 // Display other categories
 var fieldCategory = document.querySelector('#field-category');
+var fieldSelect = document.querySelector('.select-styled');
 
 
 function getTextContent(a) {
 	fieldCategory.setAttribute('placeholder', a.textContent);
 	fieldCategory.setAttribute('value', a.textContent);
+    
+    $('.select-styled').text(a.textContent);
+
 	clickEnter.checked = false;
 }
 
